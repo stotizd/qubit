@@ -1,0 +1,107 @@
+@media (max-width: 1020px) {
+    .main-nav, .header-link-main {
+        display: none;
+    }
+    .humburger{
+        display: initial;
+    }
+    .mobile-menu{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        width: 80%;
+        right: -80%;
+        height: 100vh;
+        transition: 0.3s;
+    }
+    .mobile-menu-active{
+        transform: translateX(-100%);
+    }
+    .mobile-menu ul{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+    .first-section{
+        height: auto;
+        grid-template-rows: calc(100% - 210px) auto;
+    }
+    .first-bg{
+        height: calc(100vh - 210px);
+    } 
+    .first-logo-bar{
+        height: auto;
+        padding: 45px 0;
+    }
+    .first-logo-bar .container div{
+        flex-direction: column;
+        align-items: center;
+        gap: 64px;
+    }
+    .third-section{
+
+    }
+    .third-section-blocks{
+        grid-template-columns: 1fr 1fr;
+    }
+    .fourth-section{
+
+    }
+    .fourth-section h2{
+        text-align: center;
+    }
+    .fourth-section-blocks{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .fifth-section-blocks{
+        grid-template-columns: 1fr;
+    }
+    .fifth-section-block a{
+    }
+}
+@media (max-width: 550px) {
+    .first-section{
+        grid-template-rows: 395px auto;
+    }
+    .first-bg{
+        background: #F6BED9;
+    } 
+    .start-text-slogan{
+        font-size: 12px;
+    }
+    .start-text h1{
+        font-size: 22px;
+        line-height: 25px;
+        margin: 15px 0 25px 0;
+    }
+    .start-text-description{
+        font-size: 14px;
+    }
+    .second-section img{
+        display: none;
+    }
+    .second-section-links{
+        flex-direction: column;
+        margin-top: 50px;
+        height: auto;
+    }
+    .second-section-links a{
+        height: 40px;
+    }
+    .third-section{
+
+    }
+    .third-section-blocks{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
